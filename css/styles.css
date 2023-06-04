@@ -1,0 +1,333 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: whitesmoke;
+}
+
+/*SCSS HEADER*/
+header {
+  background-color: #F4DDB9;
+}
+header img {
+  display: flex;
+  width: 200px;
+  height: 150px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+header nav {
+  width: 100%;
+}
+
+.navbar-nav li a {
+  text-decoration: none;
+  color: black;
+}
+.navbar-nav li:hover {
+  border: solid 2px white;
+  padding: 2px 2px;
+}
+
+/*SCSS DE INDEX*/
+/*primer section*/
+.imgindex {
+  margin-top: 10px;
+  width: 100%;
+  height: 300px;
+}
+
+.section-1 h2 {
+  margin-top: 20px;
+}
+.section-1 h3 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+.section-1 p {
+  margin-bottom: 10px;
+}
+
+/*Carrusel*/
+.sectionCarousel {
+  background-color: #F4DDB9;
+  padding: 20px;
+}
+
+.carousel-item img {
+  height: 250px;
+}
+
+@media (min-width: 650px) {
+  #carouselExampleIndicators {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .carousel-item img {
+    height: 400px;
+  }
+}
+@media (min-width: 850px) {
+  #carouselExampleIndicators {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .carousel-item img {
+    height: 550px;
+  }
+}
+/*MAIN*/
+main {
+  margin-bottom: 20px;
+}
+main img {
+  width: 500px;
+  border: solid 2px black;
+}
+main h2 {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+main p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  border: solid 2px black;
+  margin: 5px 5px;
+}
+
+/*SCSS DE TOURS*/
+.card {
+  background-color: #F4DDB9;
+  border: solid 3px black;
+  margin: 5px 5px;
+}
+.card p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tourCards {
+  margin: 0 auto;
+}
+
+/*SCSS DE GALERIA*/
+#galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px 0px;
+}
+#galeria div {
+  transition: transform 0.2s;
+}
+#galeria div:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+  #galeria {
+    display: grid;
+    grid-template-areas: "foto1 foto1 foto2 foto2 foto2" "foto1 foto1 foto2 foto2 foto2" "foto3 foto3 foto2 foto2 foto2" "foto3 foto3 foto2 foto2 foto2" "foto4 foto5 foto6 foto7 foto8" "foto9 foto10 foto10 foto11 foto11" "foto12 foto10 foto10 foto11 foto11";
+    gap: 5px;
+    margin: 30px 0px;
+  }
+}
+.uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho, .nueve, .diez, .once, .doce {
+  max-width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho, .nueve, .diez, .once, .doce {
+    max-width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.uno {
+  background-image: url(../img/egipto2.jpg);
+  grid-area: foto1;
+  border: solid black 2px;
+}
+
+.dos {
+  background-image: url(../img/egipto.jpg);
+  grid-area: foto2;
+  border: solid black 2px;
+}
+
+.tres {
+  background-image: url(../img/egipto3.jpg);
+  grid-area: foto3;
+  border: solid black 2px;
+}
+
+.cuatro {
+  background-image: url(../img/madrid.jpg);
+  grid-area: foto4;
+  border: solid black 2px;
+}
+
+.cinco {
+  background-image: url(../img/berlin.jpeg);
+  grid-area: foto5;
+  border: solid black 2px;
+}
+
+.seis {
+  background-image: url(../img/londres.jpg);
+  grid-area: foto6;
+  border: solid black 2px;
+}
+
+.siete {
+  background-image: url(../img/amsterdam.jpg);
+  grid-area: foto7;
+  border: solid black 2px;
+}
+
+.ocho {
+  background-image: url(../img/roma.jpg);
+  grid-area: foto8;
+  border: solid black 2px;
+}
+
+.nueve {
+  background-image: url(../img/kenia1.jpg);
+  grid-area: foto9;
+  border: solid black 2px;
+}
+
+.diez {
+  background-image: url(../img/kenia2.jpg);
+  grid-area: foto10;
+  border: solid black 2px;
+}
+
+.once {
+  background-image: url(../img/kenia.jpg);
+  grid-area: foto11;
+  border: solid black 2px;
+}
+
+.doce {
+  background-image: url(../img/kenia3.jpg);
+  grid-area: foto12;
+  border: solid black 2px;
+}
+
+@media (min-width: 768px) {
+  .dos {
+    background-image: url(../img/egipto.jpg);
+    grid-area: foto2;
+    align-self: flex-start;
+    height: 100%;
+    border: solid black 2px;
+  }
+  .diez {
+    background-image: url(../img/kenia2.jpg);
+    grid-area: foto10;
+    align-self: flex-start;
+    height: 100%;
+    border: solid black 2px;
+  }
+  .once {
+    background-image: url(../img/kenia.jpg);
+    grid-area: foto11;
+    align-self: flex-start;
+    height: 100%;
+    border: solid black 2px;
+  }
+}
+.vid {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.h2Galeria {
+  margin-top: 50px;
+}
+
+/*SCSS DE NOSOTROS*/
+.sobreNos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .sobreNos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .sobreNos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.parrafo {
+  border: solid 20px #F4DDB9;
+  padding: 20px;
+}
+
+/*SCSS DE CONTACTO*/
+form {
+  margin: 50px 10px;
+}
+form div {
+  margin: 10px 0;
+}
+
+.ubic {
+  margin: 20px 0;
+  max-width: 550px;
+}
+
+/*SCSS DE FOOTER*/
+footer {
+  background-color: #F4DDB9;
+}
+footer h3 {
+  margin-top: 5px;
+}
+footer p {
+  margin-bottom: 0px;
+}
+
+.redes-img {
+  width: 30px;
+}
+
+.enlace-wpp {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+}
+
+.enlace-wpp:hover {
+  padding: 2px 2px;
+}
+
+/*# sourceMappingURL=styles.css.map */
